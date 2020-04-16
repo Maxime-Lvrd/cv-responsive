@@ -1,0 +1,101 @@
+body {
+    background-image: url(../img/bg-body.jpeg);
+    background-size: auto;
+}
+li, a {
+    color: white;
+    list-style-type: none;
+}
+.navbar-toggler {
+    padding: 1%;
+    margin: 2%;
+    margin-left: 0%;
+}
+.fas {
+    color: white;
+    font-size: 1rem;
+}
+header {
+    background-image: url(../img/stars.jpeg);
+    background-size: cover;
+    color: white;
+}
+h1 {
+    font-weight: bold;
+    font-size: 5vw;
+    margin-bottom: 0;
+}
+h2 {
+    font-style: italic;
+    font-size: 3vw;
+    margin-top: 0;
+}
+.photo {
+    border: 1px solid white;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+}
+h3 {
+    text-shadow: 2px 1px 1px #90a4ae;
+    font-size: 4vw;
+}
+.container-1, .container-2 {
+    background-color: #252a3b;
+    color: white;
+    font-size: 2vw;
+    padding: 1vw 10vw;
+}
+h4 {
+    font-size: 3vw;
+    text-shadow: 1px 1px 1px;
+}
+p, label {
+    font-size: 2vw;
+}
+.progress-bar1 {
+    width: 90%; 
+    background-color: #e96228
+}
+.progress-bar2 {
+    width: 85%; 
+    background-color: #2862e9
+}
+.progress-bar3 {
+    width: 75%; 
+    background-color: #533b78
+}
+.progress-bar4 {
+    width: 5%; 
+    background-color: #efd81d
+}
+.work {
+    color: black;
+}
+.badge {
+    color: white;
+    background-color: #252a3b;
+    font-size: 1vw;
+}
+.skill2 {
+    font-size: 1.5vw;
+}
+label {
+    padding-left: 2%;
+    margin-bottom: 2px;
+}
+input, textarea {
+    width: 90%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    padding: 0 5px;
+  }
+  button {
+      background-color: white;
+      color: #252a3b;
+      border-radius: 10px;
+      margin: 10px 35%;
+      margin-bottom: 0;
+  }
