@@ -1,15 +1,110 @@
 body {
     background-image: url(../img/bg-body.jpeg);
-    background-size: auto;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-li, a {
+
+/* navbar */
+
+nav {
+    background-color: #252a3b;
+}
+ul {
+    list-style: none;
+    margin-bottom: 0;
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
     color: white;
-    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
 }
+nav ul li a:hover {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+.toggle-menu {
+    display: none;
+    cursor: pointer;
+    padding-left: 25px;
+    text-align: left;
+    font-size: 25px;
+    color: white;
+    background-color: #252a3b;
+}
+
+/* navbar fixe 
+
+.nav {
+    background-color: #252a3b;
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    border: none;
+    width: 100%;
+}
+.nav-link:hover {
+    color: seashell;
+    border: none;
+    text-shadow: rgb(187, 205, 221) 1px 1px 1px;
+}
+*/
+
+/* animation 
+
+h1 {
+    animation-name: updown;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes updown {
+    from {
+        margin-left: 5%;
+    }
+    to {
+        margin-right: 5%;
+    }
+}
+
+h2 {
+    animation-name: updown;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes updown {
+    from {
+        margin-left: 10%;
+    }
+    to {
+        margin-right: 10%;
+    }
+}
+*/
+
+/* nav hamburger 
+
 .navbar-toggler {
     padding: 1%;
     margin: 2%;
     margin-left: 0%;
+}
+
+*/
+
+li, a {
+    color: white;
+    list-style-type: none;
 }
 .fas {
     color: white;
@@ -19,6 +114,7 @@ header {
     background-image: url(../img/moutain.jpeg);
     background-size: cover;
     color: white;
+    margin-top: 41px;
 }
 h1 {
     font-weight: bold;
@@ -39,6 +135,8 @@ h2 {
 h3 {
     text-shadow: 2px 1px 1px #90a4ae;
     font-size: 4vw;
+    margin-bottom: 0.5em;
+    padding-top: 40px;
 }
 .container-1, .container-2 {
     background-color: #252a3b;
@@ -53,21 +151,32 @@ h4 {
 p, label {
     font-size: 2vw;
 }
+div ul li p {
+    font-size: 16px;
+}
 .progress-bar1 {
     width: 90%; 
-    background-color: #e96228
+    background-color: #e96228;
 }
 .progress-bar2 {
-    width: 85%; 
-    background-color: #2862e9
+    width: 80%; 
+    background-color: #2862e9;
 }
 .progress-bar3 {
-    width: 75%; 
-    background-color: #533b78
+    width: 80%; 
+    background-color: #533b78;
 }
 .progress-bar4 {
-    width: 5%; 
-    background-color: #efd81d
+    width: 35%; 
+    background-color: #efd81d;
+}
+.progress-bar5 {
+    width: 65%; 
+    background-color: #207196;
+}
+.progress-bar6 {
+    width: 25%; 
+    background-color: #7377AD;
 }
 .work {
     color: black;
@@ -75,10 +184,10 @@ p, label {
 .badge {
     color: white;
     background-color: #252a3b;
-    font-size: 1vw;
+    font-size: 12px;
 }
 .skill2 {
-    font-size: 1.5vw;
+    font-size: 14px;
 }
 label {
     padding-left: 2%;
@@ -87,7 +196,7 @@ label {
 input, textarea {
     width: 90%;
     border: 1px solid #ccc;
-    border-radius: 10px;
+    border-radius: 3px;
     margin-top: 2px;
     margin-bottom: 5px;
     padding: 0 5px;
@@ -98,4 +207,40 @@ input, textarea {
       border-radius: 10px;
       margin: 10px 35%;
       margin-bottom: 0;
+      border: 2px solid #51576d;
   }
+
+.anim {
+    animation-duration: 5s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 75%;
+        width: 100%;
+    }
+}
+
+/* afficher navbar selon taille */ 
+
+@media screen and (max-width: 600px) {
+    nav ul li {
+        display: block;
+    }
+    nav ul li a {
+        display: block;
+    }
+    nav ul {
+        display: none;
+    }
+    .toggle-menu {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    nav ul {
+        display: block;
+    }
+}
