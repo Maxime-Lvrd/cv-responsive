@@ -22,6 +22,16 @@ window.addEventListener('resize', function() {
     }
 });
 
+// animation hover lien
+let arrow = document.querySelector('.a');
+
+arrow.addEventListener('mouseover', () => {
+    arrow.classList.toggle('a-animation');
+});
+arrow.addEventListener('mouseout', () => {
+    arrow.classList.toggle('a-animation');
+});
+
 const scroll = new SmoothScroll('a[href*="#"]', {
     speed: 800
 })
