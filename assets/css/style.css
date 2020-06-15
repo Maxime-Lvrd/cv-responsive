@@ -272,6 +272,10 @@ footer a:hover {
     text-decoration: none;
     color: white;
 }
+.website:hover {
+    font-size: 25px;
+    text-shadow: 0 0 5px rgb(126, 126, 173);
+}
 
 /* contact */
 a {
